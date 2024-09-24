@@ -1,0 +1,145 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    padding: 20px;
+    margin: 0;
+}
+
+/* Fullscreen container styling */
+.container {
+    width: 100vw; /* Full width */
+    height: 100vh; /* Full height */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+}
+
+/* Form Section */
+.form-section {
+    margin-bottom: 20px;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+/* Checkbox and Radio Buttons */
+input[type="checkbox"], 
+input[type="radio"] {
+    margin-right: 8px;
+    display: inline-block;
+}
+
+/* Instruction Text */
+.instruction {
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+/* Required Asterisks */
+.required {
+    color: red;
+}
+
+/* Flex Layout for Buttons */
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Full width button styles */
+button {
+    padding: 12px;
+     /* Full width buttons */
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 10px 0;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Back Button Styling */
+.back-btn {
+    background-color: #999;
+    color: white;
+    border-radius: 5px;
+}
+
+.back-btn:hover {
+    background-color: #777;
+}
+
+/* Radio and Checkbox Label Alignment */
+input[type="radio"] + label,
+input[type="checkbox"] + label {
+    margin-right: 15px;
+}
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
